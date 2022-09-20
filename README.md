@@ -55,30 +55,6 @@ If you need to use Python 2, `Jython <http://jython.org>`_ or
 
 __ https://github.com/robotframework/robotframework/tree/v4.1.3#readme
 
-Example
--------
-
-Below is a simple example test case for testing login to some system.
-You can find more examples with links to related demo projects from
-http://robotframework.org.
-
-.. code:: robotframework
-
-    *** Settings ***
-    Documentation     A test suite with a single test for valid login.
-    ...
-    ...               This test has a workflow that is created using keywords in
-    ...               the imported resource file.
-    Resource          login.resource
-
-    *** Test Cases ***
-    Valid Login
-        Open Browser To Login Page
-        Input Username    demo
-        Input Password    mode
-        Submit Credentials
-        Welcome Page Should Be Open
-        [Teardown]    Close Browser
 
 Usage
 -----
